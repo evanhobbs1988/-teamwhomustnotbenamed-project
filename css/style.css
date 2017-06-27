@@ -1,0 +1,17 @@
+body{
+	padding: 25px;
+	background-color: gray;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.forms{
+	border: solid;
+	width: 25em;
+	padding: 1em;
+	margin: 1em auto;
+	border-width: .25em;
+	background-color: red;
+
+}
