@@ -1,6 +1,6 @@
 body{
 	padding: 25px;
-	background-color: #DFDEC3;
+	background-color: gray;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 }
@@ -16,10 +16,3 @@ body{
 
 }
 
-.graph{
-	border: solid;
-	width: 25em;
-	padding: 1em;
-	margin: 1em auto;
-	border-width: .25em;wif
-}
