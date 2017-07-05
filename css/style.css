@@ -3,7 +3,7 @@ body {
 	background-color: #032c3a;
 	text-align: center;
 	font-family: 'New Century Schoolbook', serif  ;
-background: linear-gradient(#d0daed, #bec6d6, #858d9b, #4b4f56, #212326)
+background: linear-gradient( #858d9b, #eaeaea, #d0daed, #bec6d6, #858d9b, #4b4f56, #212326)
 }
 
 .forms {
@@ -21,7 +21,7 @@ background: linear-gradient(#d0daed, #bec6d6, #858d9b, #4b4f56, #212326)
 	border-width: .15em;
 	border-color:#85a6e2 ; 
 	background-color: #a5c4ff ;
-	background: linear-gradient(#bce0f4, #9edbff, #a0c4d8,#87a7ba);
+	background: linear-gradient(#3f89ff, #bce0f4, #9edbff, #a0c4d8,#87a7ba, #4286f4, #1b3a6d);
 	color: #032c3a;
 	font-weight: bold;
 	box-shadow: 0px 0px 15px 0px #29406b;
