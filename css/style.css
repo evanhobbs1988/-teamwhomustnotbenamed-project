@@ -2,7 +2,7 @@ body {
 	padding: 20px;	
 	text-align: center;
 	font-family: 'New Century Schoolbook', serif  ;
-	background: linear-gradient(#032c3a, #0f2a56, #858d9b, #eaeaea, #d0daed, #bec6d6, #858d9b, #4b4f56, #212326, #0f2a56)
+	background: linear-gradient(#1a1b1c, #82868c, #c7ced8 50%,#1a1b1c)
 }
 
 
@@ -14,9 +14,8 @@ body {
 	padding: 1.5em;
 	margin: 2em auto;
 	border-width: .15em;
-	border-color:#85a6e2 ; 
-	background-color: #a5c4ff ;
-	background: linear-gradient(#3f89ff, #bce0f4, #9edbff, #a0c4d8,#87a7ba, #4286f4, #1b3a6d);
+	border-color:#85a6e2 ; 	
+	background: linear-gradient( #1b7a7d, #bce0f4 5% , #bce0f4 90%, #1b7a7d);
 	color: #032c3a;
 	font-weight: bold;
 
