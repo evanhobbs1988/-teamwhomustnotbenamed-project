@@ -1,17 +1,12 @@
 body {
-	padding: 20px;
-	background-color: #032c3a;
+	padding: 20px;	
 	text-align: center;
 	font-family: 'New Century Schoolbook', serif  ;
-background: linear-gradient( #858d9b, #eaeaea, #d0daed, #bec6d6, #858d9b, #4b4f56, #212326)
+	background: linear-gradient(#032c3a, #0f2a56, #858d9b, #eaeaea, #d0daed, #bec6d6, #858d9b, #4b4f56, #212326, #0f2a56)
 }
 
-.forms {
-
-}
 
 .forms {
-
 
 	border-radius: 12px;
 	border: solid ;
@@ -24,7 +19,7 @@ background: linear-gradient( #858d9b, #eaeaea, #d0daed, #bec6d6, #858d9b, #4b4f5
 	background: linear-gradient(#3f89ff, #bce0f4, #9edbff, #a0c4d8,#87a7ba, #4286f4, #1b3a6d);
 	color: #032c3a;
 	font-weight: bold;
-	box-shadow: 0px 0px 15px 0px #29406b;
+
 }
 
 
@@ -35,11 +30,9 @@ label {
 }
 
 img {
-	width: 100%;
-	
-	border-color: #a5c4ff
+	width: 100%;	
 	margin: 2em auto;
 	padding-top: 1em
-	
+	border-width: .15em;
 }
 
