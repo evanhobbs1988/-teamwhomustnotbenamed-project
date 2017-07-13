@@ -1,10 +1,11 @@
 var ArpsEquation = {
 
 	// t: document.getElementById('months'); 
+	// below code creates a vector t to be used in all the calculations of the ARPS equation
 
 	month: function(){	
 
-		var monthCount = document.getElementById('months');
+		var monthCount = document.getElementById('months').value;
 
 		function range(start, stop, step){
 			var a=[start], b=start;
