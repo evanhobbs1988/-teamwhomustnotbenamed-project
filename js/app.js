@@ -1,12 +1,8 @@
-var ArpsEquation = function(){
-	
-	IP: document.getElementById('IP');
-
-	b-factor: document.getElementById('b-factor');
-
-	decline: document.getElementById('decline');
+var ArpsEquation = {
 
 	// t: document.getElementById('months'); 
+
+	month: function(){	
 
 		var monthCount = document.getElementById('months');
 
@@ -17,10 +13,19 @@ var ArpsEquation = function(){
 		};
 
 		var t = range(1,monthCount,1)
+	},
 
 	ROD: function(){
+		var IP = document.getElementById('IP').value;
+
+		var bFactor = document.getElementById('bFactor').value;
+
+		var decline = document.getElementById('decline').value;
+
+		var t = month;
 		// example of playing with a for loop
 		for(var i = 0; i < this.t.length; i++){
+			(IP*30.41667)*(1+bFactor*decline*t)^(-1/b)
 			// script actually goes in here for ROD equation, will get at work 
 		};
 	}
