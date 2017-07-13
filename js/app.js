@@ -6,7 +6,17 @@ var ArpsEquation = function(){
 
 	decline: document.getElementById('decline');
 
-	// t: sequence for t goes here 
+	// t: document.getElementById('months'); 
+
+		var monthCount = document.getElementById('months');
+
+		function range(start, stop, step){
+			var a=[start], b=start;
+			while(b<stop){b+=step;a.push(b)}
+			return a;
+		};
+
+		var t = range(1,monthCount,1)
 
 	ROD: function(){
 		// example of playing with a for loop
