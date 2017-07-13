@@ -35,3 +35,18 @@ img {
 	border-width: .15em;
 }
 
+.button {
+    background-color: #020B2F ;
+    border: solid #AAA5F6 ;
+    color: #AAA5F6;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: white;
+    display: inline-block;
+    font-size:16px ;
+    font-style: bold;
+    margin: 4px 2px;
+    cursor: crosshair ;
+    width: 80%;
+    border-radius: 12px;
+}

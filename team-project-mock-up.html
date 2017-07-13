@@ -4,24 +4,7 @@
 	<title>Well Production Forecaster</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<style type="text/css">
 
-.button {
-    background-color: #020B2F ;
-    border: solid #AAA5F6 ;
-    color: #AAA5F6;
-    padding: 10px 12px;
-    text-align: center;
-    text-decoration: white;
-    display: inline-block;
-    font-size:16px ;
-    font-style: bold;
-    margin: 4px 2px;
-    cursor: crosshair ;
-    width: 80%;
-    border-radius: 12px;
-}
-</style>
 </head>
 <body>
 	<div class = "forms">
@@ -29,18 +12,18 @@
 	<h1>Well Production Forecaster</h1>
 	<hr>
 		<label for="initial-production">IP</label>
-		<input type="text" name="initial-production">
+		<input type="text" class="labelz" name="initial-production">
 		<p>
 		<label for="b-factor">b factor</label>
-		<input type="text" name="b-factor">
+		<input type="text" class="labelz"  name="b-factor">
 		<p>
 		<label for="decline">De</label>
-		<input type="text" name="decline">
+		<input type="text" class="labelz" name="decline">
 		
 	<hr> 	
 	</form>
-	<input type="button" button class="button button3" onclick="Submit" name="add" value="SUBMIT">
-	<input type="button" button class="button button3" onclick="Clear" name="add" value="CLEAR">
+	<input type="button" class="button button3" onclick="alert(&quot;no data entered nerd&quot;)" value="SUBMIT">
+	<input type="button" class="button button3" onclick="alert(&quot;data cleared&quot;)" value="CLEAR">
 		
 		<br>
 	<img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Theoretical_Oil_Well_Production_Curve.png">
