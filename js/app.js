@@ -1,6 +1,5 @@
 var ArpsEquation = {
 
-	// t: document.getElementById('months'); 
 	// below code creates a vector t to be used in all the calculations of the ARPS equation
 
 	month: function(){	
@@ -19,20 +18,18 @@ var ArpsEquation = {
 	},
 
 	ROD: function(){
-		console.log("This called the ROD function");
+		// console.log("This called the ROD function");
 		var IP = document.getElementById('IP').value;
-		console.log("IP",IP);
 
 		var bFactor = document.getElementById('bFactor').value;
 
 		var decline = document.getElementById('decline').value;
 
 		var t = this.month();
-		console.log("t",t);
-		// example of playing with a for loop
+		
+		// for loop that has all the ARPS equations piled on top of one another
 		for(var i = t.length-1; i > 0; i--){
 			console.log((IP*30.41667)*(1+bFactor*decline*i)^(-1/bFactor));
-			// script actually goes in here for ROD equation, will get at work 
 		};
 	},
 
