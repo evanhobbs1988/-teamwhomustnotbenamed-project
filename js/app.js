@@ -18,6 +18,9 @@ var ArpsEquation = {
 	},
 
 	ROD: function(){
+		// first clear the old list
+		console.clear();
+
 		// console.log("This called the ROD function");
 		var IP = document.getElementById('IP').value;
 
@@ -31,13 +34,13 @@ var ArpsEquation = {
 		for(var i = t.length-1; i > 0; i--){
 			console.log((IP*30.41667)*(1+bFactor*decline*i)^(-1/bFactor));
 		};
-	},
+	}
 
 
-	[{
-		t: "number",
-		ROD: "number"
-	},
+	// [{
+		// t: "number",
+		// ROD: "number"
+	// },
 
 	// table: function(){
 		// functon goes here that will map our table?? need it to return 2 columns - a column of t values, 
