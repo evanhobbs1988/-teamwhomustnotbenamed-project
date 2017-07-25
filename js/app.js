@@ -1,3 +1,6 @@
+var data = [[{label: 'Month', id: 'month'},
+				{label: 'Production', id: 'Production', type: 'number'}]];
+
 var ArpsEquation = {
 
 	// below code creates a vector t to be used in all the calculations of the ARPS equation
@@ -50,9 +53,10 @@ var ArpsEquation = {
 			} else {
 				var ARPS = [i, HYPER];
 			}
-			console.log(ARPS);	
+			data.push(ARPS);	
 
 		};
+		console.log(data);
 	}
 
 
