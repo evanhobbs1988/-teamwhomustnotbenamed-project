@@ -1,5 +1,7 @@
-var data = [[{label: 'Month', id: 'month'},
-				{label: 'Production', id: 'Production', type: 'number'}]];
+google.charts.load('current', {'packages':['line']});
+google.charts.setOnLoadCallback(drawChart);
+
+var dataArray = [];
 
 var ArpsEquation = {
 
@@ -53,10 +55,10 @@ var ArpsEquation = {
 			} else {
 				var ARPS = [i, HYPER];
 			}
-			data.push(ARPS);	
+			dataArray.push(ARPS);	
 
 		};
-		console.log(data);
+		console.log(dataArray);
 	}
 
 
@@ -71,5 +73,56 @@ var ArpsEquation = {
 		// use... d3??? 
 	// }
 }
+
+function drawChart() {
+
+	var data = google.visualization.arrayToDataTable([
+		[{label: 'Month', id: 'month', type: 'number'},
+		{label: 'Production', id: 'Production', type: 'number'}], 
+		[dataArray]]);
+
+		// [
+		// [{label: 'Month', id: 'month'},
+		// {label: 'Production', id: 'Production', type: 'number'}],
+		// [1, 126390.6972471915],
+		// [2, 113830.76384454581],
+		// [3, 103726.86200919328],
+		// [4, 95407.69858010643],
+		// [5, 88428.54775797855],
+		// [6, 82482.58082688798],
+		// [7, 77350.96151745727],
+		// [8, 72873.22942431364],
+		// [9, 68928.93555021915],
+		// [10, 65425.82667695766],
+		// [11, 62291.99966878467],
+		// [12, 59470.547865734436],
+		// [13, 56915.81994448928],
+		// [14, 54590.75013387017],
+		// [15, 52464.9171303974],
+		// [16, 50513.10909540998],
+		// [17, 48714.2467549094],
+		// [18, 47050.56419687369],
+		// [19, 45506.977965020575],
+		// [20, 44070.595664173365],
+		// [21, 42730.329254006036],
+		// [22, 41476.58782213344],
+		// [23, 40301.0313501081]
+		// ]);
+
+	var options = {
+	    chart: {
+	    	title: 'Production Forecast',
+	    	subtitle: 'Mcf or b per month'
+	    },
+	    legend: {
+	    	position: 'none'
+	    },
+	};
+
+	var chart = new google.charts.Line(document.getElementById('line-chart'));
+
+	chart.draw(data, google.charts.Line.convertOptions(options));
+}
+
 
 // ArpsEquation.draw();
