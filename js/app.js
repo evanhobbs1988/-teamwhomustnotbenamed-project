@@ -49,9 +49,9 @@ var ArpsEquation = {
 		return t;
 	},
 
-	ROD: function(){
-		// first clear the old list
-		console.clear();
+	Forecast: function(){
+
+		dataArray = [];
 
 		// console.log("This called the ROD function");
 		var IP = document.getElementById('IP').value;
