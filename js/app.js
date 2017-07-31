@@ -1,6 +1,7 @@
 var dataArray=[];
 
 google.charts.load('current', {'packages':['line']});
+google.charts.load('current', {'packages':['table']});
     // google.charts.setOnLoadCallback(drawChart);
 
     function drawChart() {
@@ -8,8 +9,6 @@ google.charts.load('current', {'packages':['line']});
       var data = new google.visualization.DataTable();
       data.addColumn('number', 'Month');
       data.addColumn('number', 'Production');
-
-      console.log("data array inside draw chart",dataArray)
 
       data.addRows(dataArray);
 
@@ -21,14 +20,28 @@ google.charts.load('current', {'packages':['line']});
         legend: {
         	position: 'none'
         }
+        
       };
 
       var chart = new google.charts.Line(document.getElementById('line-chart'));
 
       chart.draw(data, google.charts.Line.convertOptions(options));
     }
+	
+	function drawTable() {
 
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'Month');
+      data.addColumn('number', 'Production');
 
+      console.log("data array inside draw chart",dataArray)
+
+      data.addRows(dataArray);
+
+      var table = new google.visualization.Table(document.getElementById('data-table'));
+
+      table.draw(data, {width: '100%', height: '100%'});
+    }
 
 var ArpsEquation = {
 
@@ -86,6 +99,7 @@ var ArpsEquation = {
 
 		};
 		drawChart()
+		drawTable()
 		console.log(dataArray);
 	}
 }
