@@ -1,19 +1,34 @@
 body {
 	padding: 20px;	
 	text-align: center;
-	font-family: 'New Century Schoolbook', serif  ;
-	background: linear-gradient(#1a1b1c, #82868c, #c7ced8 50%,#1a1b1c)
+	font-family: 'Montserrat', sans-serif;
+}
+
+.form-group {
+	margin-left: 2em; 
+	margin-right: 2em;
+	margin-bottom: 2em;
+	padding-top: 1em;
+	max-width: 800px;
+}
+
+.ui-btn {
+	font-family: 'Montserrat', sans-serif;
 }
 
 a {
 	text-align: center;
 }
 
-.forms {
-
+#line-chart {
+	padding-top: 2em;
+	width: 100%;
+	height: 500px; 
+}
+/*.forms {
 	border-radius: 12px;
 	border: solid ;
-	width: 18em;
+	width: 80%;
 	padding: 1.5em;
 	margin: 2em auto;
 	border-width: .15em;
@@ -22,22 +37,9 @@ a {
 	color: #032c3a;
 	font-weight: bold;
 
-}
+}*/
 
-#line-chart {
-	width: 100%;
-	height: 500px; 
-}
-
-
-img {
-	width: 100%;	
-	margin: 2em auto;
-	padding-top: 1em
-	border-width: .15em;
-}
-
-.button {
+/*.button {
     background-color: #020B2F ;
     border: solid #AAA5F6 ;
     color: #AAA5F6;
@@ -51,5 +53,4 @@ img {
     cursor: crosshair ;
     width: 80%;
     border-radius: 12px;
-}
-
+}*/
