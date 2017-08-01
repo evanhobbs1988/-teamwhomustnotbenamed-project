@@ -91,9 +91,16 @@ var ArpsEquation = {
 			var CUM1 = (IP*30.41667)/((nominalDecline)*(1-bFactor))*(1-Math.pow((ROD1/(IP*30.41667)),(1-bFactor)));
 			var CUM2 = (IP*30.41667)/((nominalDecline)*(1-bFactor))*(1-Math.pow((ROD2/(IP*30.41667)),(1-bFactor)));
 			var HYPER = CUM2 - CUM1;
-			// modified ARPS changes to exponential decline at a terminal decline of .006
+			var EXP = function(x){
+				var k = 1+(Math.log(1-.06/12)/12);
+				// idea is that x would be the final value of ROD and then multiplied by k^1, k^2, k^3... so for an endless t sequence
+				// new t sequence should start at one and end at  (length of t) - (t at the switch)
+				x*Math.pow(k,t);
+			};
+			// modified ARPS changes to exponential decline at a terminal decline of .06/12
 			if (ED <= .06/12 && ED > 0){
-				var ARPS = [i, HYPER];
+				//  needs to be more going on here
+				var ARPS = EXP();
 			} else {
 				var ARPS = [i, HYPER];
 			}
