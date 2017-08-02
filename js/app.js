@@ -146,5 +146,9 @@ var ArpsEquation = {
 		var sum = ARPSEUR.reduce(add,0);
 
 		document.getElementById("EUR").innerHTML = sum;
+
+		var WellName = document.getElementById('WellName').value;
+
+		document.getElementById('WellNameOutput').innerHTML = WellName;
 	}
 }
