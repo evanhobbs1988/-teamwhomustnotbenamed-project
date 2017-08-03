@@ -2,6 +2,8 @@
 <html>
 
 <head>
+
+
 	<title>Well Production Forecaster</title>
 	
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -21,7 +23,7 @@
     <link rel="stylesheet" href="css/sb-admin-2.css" rel="stylesheet">
 
 </head>
-
+<br>
 <body>
 
 	<!-- Page 1 -->
@@ -30,37 +32,38 @@
         <div class="col-lg-12">
             <h1 class="page-header">Well Production Forecaster</h1>
         </div>
-
+<br>
     	<div class = "container">
     		<div class = "form-group">
-                <label for="well-name">Well Name</label>
-    			<input class = "form-control" type="text" id = "WellName" placeholder="MR WELL 1-12XH">
+               <h2> <label for="well-name">Well Name</label>
+    			<input class = "form-control" type="text" id = "WellName"  placeholder="MR WELL 1-12XH"></h2>
 
     			<br>
 
-                <label>Production Stream</label>
+                <h2><label>Production Stream</label>
                 <select class="form-control" id = "dropdown">
                     <option>BOE</option>
                     <option>Gas</option>
                     <option>Oil</option>
                     <option>Water</option>
-                </select>
+                </select></h2>
 
                 <br>
 
-    			<label for="initial-production">IP</label>
-    			<input class = "form-control" type="number" id = "IP" placeholder="5000">
+    			<h2><label for="initial-production">IP</label>
+    			<input class = "form-control" type="number" id = "IP" placeholder="5000"></h2>
     			<p>
-    			<label for="b-factor">b factor</label>
-    			<input class = "form-control" type="number" id = "bFactor" placeholder="1.2">
+    			<h2><label for="b-factor">b factor</label>
+    			<input class = "form-control" type="number" id = "bFactor" placeholder="1.2"></h2>
     			<p>
-    			<label for="decline">De</label>
-    			<input class = "form-control" type="number" id = "decline" placeholder="0.60">
+    			<h2><label for="decline">De</label>
+    			<input class = "form-control" type="number" id = "decline" placeholder="0.60"></h2>
     			<p>
-    			<label for="months">Months</label>
-    			<input class = "form-control" type="number" id = "months" name="months" placeholder="24">
+    			<h2><label for="months">Months</label>
+    			<input class = "form-control" type="number" id = "months" name="months" placeholder="24"></h2>
     			<p>
     			<button class="btn btn-primary btn-outline btn-lg" type="button" onclick="ArpsEquation.Forecast()">Forecast!</button>
+
 			</div>
             <div id="line-chart"></div>
 
@@ -75,7 +78,7 @@
                 </div>
             </div>
 		<!-- <div class = "container"> -->
-			<a href="#pagetwo" class="btn btn-outline btn-primary btn-lg" data-transition="pop">View Data Table</a>
+			<a href="#pagetwo" class="btn btn-primary btn-outline btn-lg" type="button" data-transition="pop">View Data Table</a>
 		</div>
 	</div>
 
