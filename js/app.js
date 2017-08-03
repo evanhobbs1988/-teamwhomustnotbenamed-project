@@ -145,6 +145,8 @@ var ArpsEquation = {
 
 		var sum = ARPSEUR.reduce(add,0);
 
+		var sumMillions = Math.round(sum/1000);
+
 		var WellName = document.getElementById('WellName').value;
 
 		document.getElementById('WellNameOutput').innerHTML = WellName;
@@ -153,7 +155,7 @@ var ArpsEquation = {
 		function formatEUR(x) {
 		return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 		}
-		var formattedEUR = formatEUR(sum)
+		var formattedEUR = formatEUR(sumMillions)
 
 		document.getElementById("EUR").innerHTML = formattedEUR;
 	}
