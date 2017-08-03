@@ -145,10 +145,16 @@ var ArpsEquation = {
 
 		var sum = ARPSEUR.reduce(add,0);
 
-		document.getElementById("EUR").innerHTML = sum;
-
 		var WellName = document.getElementById('WellName').value;
 
 		document.getElementById('WellNameOutput').innerHTML = WellName;
+
+
+		function formatEUR(x) {
+		return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		}
+		var formattedEUR = formatEUR(sum)
+
+		document.getElementById("EUR").innerHTML = formattedEUR;
 	}
 }
