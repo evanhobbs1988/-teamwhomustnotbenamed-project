@@ -1,13 +1,57 @@
-body {
-	padding: 20px;	
-	text-align: center;
-	font-family: 'Montserrat', sans-serif;
+h1 {
+	color: white;
+	font-family: bold Arial, Helvetica, sans-serif;
+	text-shadow: 2px 2px 5px black;
+}
+h2 {
+	color: white;
+	font-family: bold Arial, Helvetica, sans-serif, 30%;
+	text-shadow: 2px 2px 5px black;
+}
+element.style {
+}
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head+body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head+body .ui-btn.ui-btn-a:visited {
+    background: #57c6f2;
+    border-color:#43c7ef ;
+    or: #b2f9ff;
+    box-shadow: 2px 2px 5px black;
+
+
 }
 
-.container {
+
+.ui-mobile .ui-page {
+    min-height: 300px;
+    object-position: center;
+    background: linear-gradient( #d1c97b 0%,#fcf497 5%, #fcf497 50%,#969155 99%);
+}
+
+
+	.container {
+
+    width: 50em;
+    margin: auto;
+    max-width: 900px;
+    background: linear-gradient(#16ba42,  #00a02a );
+    border: solid white .5px ;
 	width: 50em;
 	margin: auto;
-	max-width: 900px;
+	max-width: 700px;
+	border-radius: 25px;
+	object-position: center;
+	box-shadow: 2px 2px 2px black;
+
+}
+
+
+body {
+	background-color: #187AC6;
+	padding: 20px;	
+	text-align: center;
+	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+
+
 }
 
 .form-group {
@@ -15,20 +59,26 @@ body {
 	margin-right: 2em;
 	margin-bottom: 2em;
 	padding-top: 1em;
+	align-content: center;
 }
 
+
 .ui-btn {
-	font-family: 'Montserrat', sans-serif;
+	background-color: red;
+	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
 }
 
 .btn-primary {
-	color: #fff;
+	
+	border:solid #43c7ef;
 }
+
 
 #line-chart {
 	padding-top: 2em;
 	width: 100%;
 	height: 500px; 
+	
 }
 
 .panel {
@@ -36,17 +86,49 @@ body {
 	margin-bottom: 3em;
 	margin-left: 10em;
 	margin-right: 10em;
+	color: red;
 }
 
 .col-lg-4 {
 	position: static;
+	color: red;
 }
 
 #data-table {
 	padding-top: 2em;
 	width: 80%;
-	margin-left: 5em;
+	color: red;
 }
+
+/*.forms {
+	border-radius: 12px;
+	border: solid ;
+	width: 80%;
+	padding: 1.5em;
+	margin: 2em auto;
+	border-width: .15em;
+	border-color:#85a6e2 ; 	
+	background: linear-gradient( #1b7a7d, #bce0f4 5% , #bce0f4 90%, #1b7a7d);
+	color: #032c3a;
+	font-weight: bold;
+
+}*/
+
+/*.button {
+    background-color: #020B2F ;
+    border: solid #AAA5F6 ;
+    color: #AAA5F6;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: white;
+    display: inline-block;
+    font-size:16px ;
+    font-style: bold;
+    margin: 4px 2px;
+    cursor: crosshair ;
+    width: 80%;
+    border-radius: 12px;
+}*/
 
 /*.forms {
 	border-radius: 12px;
