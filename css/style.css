@@ -48,7 +48,7 @@ body {
 	background-color: #187AC6;
 	padding: 20px;	
 	text-align: center;
-	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+	font-family: bold Arial, Helvetica, sans-serif;
 }
 
 
@@ -60,17 +60,6 @@ body {
 	margin-bottom: 2em;
 	padding-top: 1em;
 	align-content: center;
-}
-
-
-.ui-btn {
-	background-color: red;
-	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
-}
-
-.btn-primary {
-	
-	border:solid #43c7ef;
 }
 
 
