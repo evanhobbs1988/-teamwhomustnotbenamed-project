@@ -1,11 +1,12 @@
 h1 {
 	color: white;
+	 
 	font-family: bold Arial, Helvetica, sans-serif;
 	text-shadow: 2px 2px 5px black;
 }
 h2 {
 	color: white;
-	font-family: bold Arial, Helvetica, sans-serif, 30%;
+	font-family: bold Arial, Helvetica, sans-serif;
 	text-shadow: 2px 2px 5px black;
 }
 element.style {
